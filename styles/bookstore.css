@@ -1,0 +1,106 @@
+
+    
+    div.container-fluid {
+        padding: 0;
+    }
+    
+    .logoImg{
+        height: 62px;
+        width: 116px;
+    }
+    
+    a.navbar-brand{
+    font-size: 30px;
+    font-weight: 500;
+    }
+    
+
+    
+    div.bookSpace {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        margin: 120px 0 40px 0;
+    }
+    
+    .bookTitle {
+        height: 25%;
+        display: flex;
+        padding: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bookDescription {
+        height: 55%;
+        text-align: center;
+        padding: 10px 10px 0 10px;
+    }
+    
+    .bookButton {
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .coverImage {
+        width: 100%;
+        height: 100%;
+    }
+    
+    #noMatchingResult{
+    text-align: center;
+    }
+
+    .flip-card {
+        background-color: transparent;
+        width: 20%;
+        height: 370px;
+
+        perspective: 1000px;
+        margin: 5px;
+    }
+    
+    .cardCover {
+        width: 300px;
+        height: 400px;
+    }
+    
+    /* This container is needed to position the front and back side */
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+    }
+    
+    /* Do an horizontal flip when you move the mouse over the flip box container */
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+    
+    /* Position the front and back side */
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        backface-visibility: hidden;
+    }
+    
+    /* Style the front side (fallback if image is missing) */
+    .flip-card-front {
+        background-color: #bbb;
+        color: black;
+    }
+    
+    /* Style the back side */
+    .flip-card-back {
+    /*    background-color: dodgerblue;*/
+        color: white;
+        transform: rotateY(180deg);
+    }
+    
